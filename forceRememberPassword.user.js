@@ -26,7 +26,7 @@ var wrapInForm = function(container){
 	rememberForm.setAttribute('action', document.location);
 
 	//We prevent the default behavior of submitting the form because the badly written page doesn't expect a submit event.
-	rememberForm.onSubmit = function(ev){
+	rememberForm.onsubmit = function(ev){
 		ev.preventDefault();
 		return false;
 	}
